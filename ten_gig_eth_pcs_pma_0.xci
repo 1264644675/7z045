@@ -1,0 +1,423 @@
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "ten_gig_eth_pcs_pma_0",
+    "component_reference": "xilinx.com:ip:ten_gig_eth_pcs_pma:6.0",
+    "ip_revision": "25",
+    "gen_directory": ".",
+    "parameters": {
+      "component_parameters": {
+        "Component_Name": [ { "value": "ten_gig_eth_pcs_pma_0", "resolve_type": "user", "usage": "all" } ],
+        "MDIO_Management": [ { "value": "true", "resolve_type": "user", "format": "bool", "usage": "all" } ],
+        "base_kr": [ { "value": "BASE-R", "resolve_type": "user", "enabled": false, "usage": "all" } ],
+        "baser32": [ { "value": "64bit", "resolve_type": "user", "usage": "all" } ],
+        "vu_gt_type": [ { "value": "GTH", "resolve_type": "user", "enabled": false, "usage": "all" } ],
+        "speed10_25": [ { "value": "10Gig", "resolve_type": "user", "enabled": false, "usage": "all" } ],
+        "autonegotiation": [ { "value": "false", "resolve_type": "user", "format": "bool", "enabled": false, "usage": "all" } ],
+        "fec": [ { "value": "false", "resolve_type": "user", "format": "bool", "enabled": false, "usage": "all" } ],
+        "no_ebuff": [ { "value": "false", "resolve_type": "user", "format": "bool", "enabled": false, "usage": "all" } ],
+        "IEEE_1588": [ { "value": "None", "resolve_type": "user", "usage": "all" } ],
+        "Timer_Format": [ { "value": "Time_of_day", "resolve_type": "user", "usage": "all" } ],
+        "SupportLevel": [ { "value": "0", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
+        "TransceiverInExample": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ],
+        "TransceiverControl": [ { "value": "true", "value_src": "user", "resolve_type": "user", "format": "bool", "usage": "all" } ],
+        "Locations": [ { "value": "X0Y0", "resolve_type": "user", "usage": "all" } ],
+        "RefClkRate": [ { "value": "156.25", "resolve_type": "user", "usage": "all" } ],
+        "RefClk": [ { "value": "clk0", "resolve_type": "user", "usage": "all" } ],
+        "DClkRate": [ { "value": "125.00", "value_src": "user", "resolve_type": "user", "format": "float", "usage": "all" } ]
+      },
+      "model_parameters": {
+        "c_family": [ { "value": "zynq", "resolve_type": "generated", "usage": "all" } ],
+        "c_component_name": [ { "value": "ten_gig_eth_pcs_pma_0", "resolve_type": "generated", "usage": "all" } ],
+        "c_has_mdio": [ { "value": "true", "resolve_type": "generated", "format": "bool", "usage": "all" } ],
+        "c_has_fec": [ { "value": "false", "resolve_type": "generated", "format": "bool", "usage": "all" } ],
+        "c_has_an": [ { "value": "false", "resolve_type": "generated", "format": "bool", "usage": "all" } ],
+        "c_is_kr": [ { "value": "false", "resolve_type": "generated", "format": "bool", "usage": "all" } ],
+        "c_is_32bit": [ { "value": "false", "resolve_type": "generated", "format": "bool", "usage": "all" } ],
+        "c_no_ebuff": [ { "value": "false", "resolve_type": "generated", "format": "bool", "usage": "all" } ],
+        "c_gttype": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "c_1588": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "c_gtif_width": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "c_speed10_25": [ { "value": "10", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "c_sub_core_name": [ { "value": "ten_gig_eth_pcs_pma_0_gt", "resolve_type": "generated", "usage": "all" } ],
+        "c_gt_loc": [ { "value": "X0Y0", "resolve_type": "generated", "usage": "all" } ],
+        "c_refclk": [ { "value": "clk0", "resolve_type": "generated", "usage": "all" } ],
+        "c_refclkrate": [ { "value": "156", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "c_dclkrate": [ { "value": "125.00", "resolve_type": "generated", "format": "float", "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "zynq" } ],
+        "BASE_BOARD_PART": [ { "value": "" } ],
+        "BOARD_CONNECTIONS": [ { "value": "" } ],
+        "DEVICE": [ { "value": "xc7z045" } ],
+        "PACKAGE": [ { "value": "ffg900" } ],
+        "PREFHDL": [ { "value": "VERILOG" } ],
+        "SILICON_REVISION": [ { "value": "" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
+        "SPEEDGRADE": [ { "value": "-2" } ],
+        "STATIC_POWER": [ { "value": "" } ],
+        "TEMPERATURE_GRADE": [ { "value": "" } ],
+        "USE_RDI_CUSTOMIZATION": [ { "value": "TRUE" } ],
+        "USE_RDI_GENERATION": [ { "value": "TRUE" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Flow" } ],
+        "IPREVISION": [ { "value": "25" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "." } ],
+        "SELECTEDSIMMODEL": [ { "value": "" } ],
+        "SHAREDDIR": [ { "value": "." } ],
+        "SWVERSION": [ { "value": "2023.1" } ],
+        "SYNTHESISFLOW": [ { "value": "OUT_OF_CONTEXT" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "rxrecclk_out": [ { "direction": "out" } ],
+        "coreclk": [ { "direction": "in", "driver_value": "0" } ],
+        "dclk": [ { "direction": "in", "driver_value": "0" } ],
+        "txusrclk": [ { "direction": "in", "driver_value": "0" } ],
+        "txusrclk2": [ { "direction": "in", "driver_value": "0" } ],
+        "areset": [ { "direction": "in", "driver_value": "0" } ],
+        "txoutclk": [ { "direction": "out" } ],
+        "areset_coreclk": [ { "direction": "in", "driver_value": "0" } ],
+        "gttxreset": [ { "direction": "in", "driver_value": "0" } ],
+        "gtrxreset": [ { "direction": "in", "driver_value": "0" } ],
+        "txuserrdy": [ { "direction": "in", "driver_value": "0" } ],
+        "qplllock": [ { "direction": "in", "driver_value": "0" } ],
+        "qplloutclk": [ { "direction": "in" } ],
+        "qplloutrefclk": [ { "direction": "in" } ],
+        "reset_counter_done": [ { "direction": "in", "driver_value": "1" } ],
+        "txp": [ { "direction": "out" } ],
+        "txn": [ { "direction": "out" } ],
+        "rxp": [ { "direction": "in" } ],
+        "rxn": [ { "direction": "in" } ],
+        "sim_speedup_control": [ { "direction": "in", "driver_value": "0" } ],
+        "xgmii_txd": [ { "direction": "in", "size_left": "63", "size_right": "0" } ],
+        "xgmii_txc": [ { "direction": "in", "size_left": "7", "size_right": "0" } ],
+        "xgmii_rxd": [ { "direction": "out", "size_left": "63", "size_right": "0" } ],
+        "xgmii_rxc": [ { "direction": "out", "size_left": "7", "size_right": "0" } ],
+        "mdc": [ { "direction": "in", "driver_value": "0" } ],
+        "mdio_in": [ { "direction": "in", "driver_value": "0" } ],
+        "mdio_out": [ { "direction": "out" } ],
+        "mdio_tri": [ { "direction": "out" } ],
+        "prtad": [ { "direction": "in", "size_left": "4", "size_right": "0", "driver_value": "0" } ],
+        "core_status": [ { "direction": "out", "size_left": "7", "size_right": "0" } ],
+        "tx_resetdone": [ { "direction": "out" } ],
+        "rx_resetdone": [ { "direction": "out" } ],
+        "signal_detect": [ { "direction": "in", "driver_value": "1" } ],
+        "tx_fault": [ { "direction": "in", "driver_value": "0" } ],
+        "drp_req": [ { "direction": "out" } ],
+        "drp_gnt": [ { "direction": "in" } ],
+        "drp_den_o": [ { "direction": "out" } ],
+        "drp_dwe_o": [ { "direction": "out" } ],
+        "drp_daddr_o": [ { "direction": "out", "size_left": "15", "size_right": "0" } ],
+        "drp_di_o": [ { "direction": "out", "size_left": "15", "size_right": "0" } ],
+        "drp_drdy_o": [ { "direction": "out" } ],
+        "drp_drpdo_o": [ { "direction": "out", "size_left": "15", "size_right": "0" } ],
+        "drp_den_i": [ { "direction": "in", "driver_value": "0" } ],
+        "drp_dwe_i": [ { "direction": "in", "driver_value": "0" } ],
+        "drp_daddr_i": [ { "direction": "in", "size_left": "15", "size_right": "0", "driver_value": "0" } ],
+        "drp_di_i": [ { "direction": "in", "size_left": "15", "size_right": "0", "driver_value": "0" } ],
+        "drp_drdy_i": [ { "direction": "in", "driver_value": "0" } ],
+        "drp_drpdo_i": [ { "direction": "in", "size_left": "15", "size_right": "0", "driver_value": "0" } ],
+        "tx_disable": [ { "direction": "out" } ],
+        "pma_pmd_type": [ { "direction": "in", "size_left": "2", "size_right": "0", "driver_value": "0" } ],
+        "gt0_eyescanreset": [ { "direction": "in", "driver_value": "0" } ],
+        "gt0_eyescandataerror": [ { "direction": "out" } ],
+        "gt0_txbufstatus": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "gt0_rxbufstatus": [ { "direction": "out", "size_left": "2", "size_right": "0" } ],
+        "gt0_eyescantrigger": [ { "direction": "in", "driver_value": "0" } ],
+        "gt0_rxcdrhold": [ { "direction": "in", "driver_value": "0" } ],
+        "gt0_txprbsforceerr": [ { "direction": "in", "driver_value": "0" } ],
+        "gt0_txpolarity": [ { "direction": "in", "driver_value": "0" } ],
+        "gt0_rxpolarity": [ { "direction": "in", "driver_value": "0" } ],
+        "gt0_rxprbserr": [ { "direction": "out" } ],
+        "gt0_txpmareset": [ { "direction": "in", "driver_value": "0" } ],
+        "gt0_rxpmareset": [ { "direction": "in", "driver_value": "0" } ],
+        "gt0_txresetdone": [ { "direction": "out" } ],
+        "gt0_rxresetdone": [ { "direction": "out" } ],
+        "gt0_rxdfelpmreset": [ { "direction": "in", "driver_value": "0" } ],
+        "gt0_rxlpmen": [ { "direction": "in", "driver_value": "0" } ],
+        "gt0_dmonitorout": [ { "direction": "out", "size_left": "7", "size_right": "0" } ],
+        "gt0_rxrate": [ { "direction": "in", "size_left": "2", "size_right": "0", "driver_value": "0" } ],
+        "gt0_txprecursor": [ { "direction": "in", "size_left": "4", "size_right": "0", "driver_value": "0" } ],
+        "gt0_txpostcursor": [ { "direction": "in", "size_left": "4", "size_right": "0", "driver_value": "0" } ],
+        "gt0_txdiffctrl": [ { "direction": "in", "size_left": "3", "size_right": "0", "driver_value": "14" } ]
+      },
+      "interfaces": {
+        "transceiver_debug": {
+          "vlnv": "xilinx.com:display_ten_gig_eth_pcs_pma:transceiver_debug:1.0",
+          "abstraction_type": "xilinx.com:display_ten_gig_eth_pcs_pma:transceiver_debug_rtl:1.0",
+          "mode": "slave",
+          "port_maps": {
+            "gt0_dmonitorout": [ { "physical_name": "gt0_dmonitorout" } ],
+            "gt0_eyescandataerror": [ { "physical_name": "gt0_eyescandataerror" } ],
+            "gt0_eyescanreset": [ { "physical_name": "gt0_eyescanreset" } ],
+            "gt0_eyescantrigger": [ { "physical_name": "gt0_eyescantrigger" } ],
+            "gt0_rxbufstatus": [ { "physical_name": "gt0_rxbufstatus" } ],
+            "gt0_rxcdrhold": [ { "physical_name": "gt0_rxcdrhold" } ],
+            "gt0_rxdfelpmreset": [ { "physical_name": "gt0_rxdfelpmreset" } ],
+            "gt0_rxlpmen": [ { "physical_name": "gt0_rxlpmen" } ],
+            "gt0_rxpmareset": [ { "physical_name": "gt0_rxpmareset" } ],
+            "gt0_rxpolarity": [ { "physical_name": "gt0_rxpolarity" } ],
+            "gt0_rxprbserr": [ { "physical_name": "gt0_rxprbserr" } ],
+            "gt0_rxrate": [ { "physical_name": "gt0_rxrate" } ],
+            "gt0_rxresetdone": [ { "physical_name": "gt0_rxresetdone" } ],
+            "gt0_txbufstatus": [ { "physical_name": "gt0_txbufstatus" } ],
+            "gt0_txdiffctrl": [ { "physical_name": "gt0_txdiffctrl" } ],
+            "gt0_txpmareset": [ { "physical_name": "gt0_txpmareset" } ],
+            "gt0_txpolarity": [ { "physical_name": "gt0_txpolarity" } ],
+            "gt0_txpostcursor": [ { "physical_name": "gt0_txpostcursor" } ],
+            "gt0_txprbsforceerr": [ { "physical_name": "gt0_txprbsforceerr" } ],
+            "gt0_txprecursor": [ { "physical_name": "gt0_txprecursor" } ],
+            "gt0_txresetdone": [ { "physical_name": "gt0_txresetdone" } ]
+          }
+        },
+        "mdio_interface": {
+          "vlnv": "xilinx.com:interface:mdio:1.0",
+          "abstraction_type": "xilinx.com:interface:mdio_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "CAN_DEBUG": [ { "value": "false", "resolve_type": "generated", "format": "bool", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "MDC": [ { "physical_name": "mdc" } ],
+            "MDIO_I": [ { "physical_name": "mdio_in" } ],
+            "MDIO_O": [ { "physical_name": "mdio_out" } ],
+            "MDIO_T": [ { "physical_name": "mdio_tri" } ]
+          }
+        },
+        "xgmii_interface": {
+          "vlnv": "xilinx.com:interface:xgmii:1.0",
+          "abstraction_type": "xilinx.com:interface:xgmii_rtl:1.0",
+          "mode": "slave",
+          "port_maps": {
+            "RXC": [ { "physical_name": "xgmii_rxc" } ],
+            "RXD": [ { "physical_name": "xgmii_rxd" } ],
+            "TXC": [ { "physical_name": "xgmii_txc" } ],
+            "TXD": [ { "physical_name": "xgmii_txd" } ]
+          }
+        },
+        "coreclk": {
+          "vlnv": "xilinx.com:signal:clock:1.0",
+          "abstraction_type": "xilinx.com:signal:clock_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "FREQ_HZ": [ { "value": "156250000", "value_src": "constant", "usage": "all" } ],
+            "ASSOCIATED_BUSIF": [ { "value": "xgmii_interface", "value_src": "constant", "usage": "all" } ],
+            "FREQ_TOLERANCE_HZ": [ { "value": "0", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "PHASE": [ { "value": "0.0", "resolve_type": "generated", "format": "float", "is_ips_inferred": true, "is_static_object": false } ],
+            "CLK_DOMAIN": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_PORT": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_RESET": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "CLK": [ { "physical_name": "coreclk" } ]
+          }
+        },
+        "dclk": {
+          "vlnv": "xilinx.com:signal:clock:1.0",
+          "abstraction_type": "xilinx.com:signal:clock_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "ASSOCIATED_BUSIF": [ { "value": "core_gt_drp_interface:user_gt_drp_interface:core_to_gt_drp:gt_drp", "value_src": "constant", "usage": "all" } ],
+            "FREQ_HZ": [ { "value": "100000000", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "FREQ_TOLERANCE_HZ": [ { "value": "0", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "PHASE": [ { "value": "0.0", "resolve_type": "generated", "format": "float", "is_ips_inferred": true, "is_static_object": false } ],
+            "CLK_DOMAIN": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_PORT": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_RESET": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "CLK": [ { "physical_name": "dclk" } ]
+          }
+        },
+        "txusrclk": {
+          "vlnv": "xilinx.com:signal:clock:1.0",
+          "abstraction_type": "xilinx.com:signal:clock_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "FREQ_HZ": [ { "value": "312500000", "value_src": "constant", "usage": "all" } ],
+            "FREQ_TOLERANCE_HZ": [ { "value": "0", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "PHASE": [ { "value": "0.0", "resolve_type": "generated", "format": "float", "is_ips_inferred": true, "is_static_object": false } ],
+            "CLK_DOMAIN": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_BUSIF": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_PORT": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_RESET": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "CLK": [ { "physical_name": "txusrclk" } ]
+          }
+        },
+        "txusrclk2": {
+          "vlnv": "xilinx.com:signal:clock:1.0",
+          "abstraction_type": "xilinx.com:signal:clock_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "FREQ_HZ": [ { "value": "312500000", "value_src": "constant", "usage": "all" } ],
+            "FREQ_TOLERANCE_HZ": [ { "value": "0", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "PHASE": [ { "value": "0.0", "resolve_type": "generated", "format": "float", "is_ips_inferred": true, "is_static_object": false } ],
+            "CLK_DOMAIN": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_BUSIF": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_PORT": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_RESET": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "CLK": [ { "physical_name": "txusrclk2" } ]
+          }
+        },
+        "txoutclk": {
+          "vlnv": "xilinx.com:signal:clock:1.0",
+          "abstraction_type": "xilinx.com:signal:clock_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "FREQ_HZ": [ { "value": "312500000", "value_src": "constant", "usage": "all" } ],
+            "FREQ_TOLERANCE_HZ": [ { "value": "0", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "PHASE": [ { "value": "0.0", "resolve_type": "generated", "format": "float", "is_ips_inferred": true, "is_static_object": false } ],
+            "CLK_DOMAIN": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_BUSIF": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_PORT": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_RESET": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "CLK": [ { "physical_name": "txoutclk" } ]
+          }
+        },
+        "qplloutclk": {
+          "vlnv": "xilinx.com:signal:clock:1.0",
+          "abstraction_type": "xilinx.com:signal:clock_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "FREQ_HZ": [ { "value": "100000000", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "FREQ_TOLERANCE_HZ": [ { "value": "0", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "PHASE": [ { "value": "0.0", "resolve_type": "generated", "format": "float", "is_ips_inferred": true, "is_static_object": false } ],
+            "CLK_DOMAIN": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_BUSIF": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_PORT": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_RESET": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "CLK": [ { "physical_name": "qplloutclk" } ]
+          }
+        },
+        "qplloutrefclk": {
+          "vlnv": "xilinx.com:signal:clock:1.0",
+          "abstraction_type": "xilinx.com:signal:clock_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "FREQ_HZ": [ { "value": "100000000", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "FREQ_TOLERANCE_HZ": [ { "value": "0", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "PHASE": [ { "value": "0.0", "resolve_type": "generated", "format": "float", "is_ips_inferred": true, "is_static_object": false } ],
+            "CLK_DOMAIN": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_BUSIF": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_PORT": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_RESET": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "CLK": [ { "physical_name": "qplloutrefclk" } ]
+          }
+        },
+        "rxrecclk_out": {
+          "vlnv": "xilinx.com:signal:clock:1.0",
+          "abstraction_type": "xilinx.com:signal:clock_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "FREQ_HZ": [ { "value": "312500000", "value_src": "constant", "usage": "all" } ],
+            "ASSOCIATED_RESET": [ { "value": "gtrxreset_out", "value_src": "constant", "usage": "all" } ],
+            "FREQ_TOLERANCE_HZ": [ { "value": "0", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "PHASE": [ { "value": "0.0", "resolve_type": "generated", "format": "float", "is_ips_inferred": true, "is_static_object": false } ],
+            "CLK_DOMAIN": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_BUSIF": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_PORT": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "CLK": [ { "physical_name": "rxrecclk_out" } ]
+          }
+        },
+        "areset": {
+          "vlnv": "xilinx.com:signal:reset:1.0",
+          "abstraction_type": "xilinx.com:signal:reset_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "POLARITY": [ { "value": "ACTIVE_HIGH", "value_src": "constant", "usage": "all" } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "RST": [ { "physical_name": "areset" } ]
+          }
+        },
+        "areset_coreclk": {
+          "vlnv": "xilinx.com:signal:reset:1.0",
+          "abstraction_type": "xilinx.com:signal:reset_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "POLARITY": [ { "value": "ACTIVE_HIGH", "value_src": "constant", "usage": "all" } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "RST": [ { "physical_name": "areset_coreclk" } ]
+          }
+        },
+        "gttxreset": {
+          "vlnv": "xilinx.com:signal:reset:1.0",
+          "abstraction_type": "xilinx.com:signal:reset_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "POLARITY": [ { "value": "ACTIVE_HIGH", "value_src": "constant", "usage": "all" } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "RST": [ { "physical_name": "gttxreset" } ]
+          }
+        },
+        "gtrxreset": {
+          "vlnv": "xilinx.com:signal:reset:1.0",
+          "abstraction_type": "xilinx.com:signal:reset_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "POLARITY": [ { "value": "ACTIVE_HIGH", "value_src": "constant", "usage": "all" } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "RST": [ { "physical_name": "gtrxreset" } ]
+          }
+        },
+        "core_gt_drp_interface": {
+          "vlnv": "xilinx.com:interface:drp:1.0",
+          "abstraction_type": "xilinx.com:interface:drp_rtl:1.0",
+          "mode": "master",
+          "port_maps": {
+            "DADDR": [ { "physical_name": "drp_daddr_o" } ],
+            "DEN": [ { "physical_name": "drp_den_o" } ],
+            "DI": [ { "physical_name": "drp_di_o" } ],
+            "DO": [ { "physical_name": "drp_drpdo_i" } ],
+            "DRDY": [ { "physical_name": "drp_drdy_i" } ],
+            "DWE": [ { "physical_name": "drp_dwe_o" } ]
+          }
+        },
+        "user_gt_drp_interface": {
+          "vlnv": "xilinx.com:interface:drp:1.0",
+          "abstraction_type": "xilinx.com:interface:drp_rtl:1.0",
+          "mode": "slave",
+          "port_maps": {
+            "DADDR": [ { "physical_name": "drp_daddr_i" } ],
+            "DEN": [ { "physical_name": "drp_den_i" } ],
+            "DI": [ { "physical_name": "drp_di_i" } ],
+            "DO": [ { "physical_name": "drp_drpdo_o" } ],
+            "DRDY": [ { "physical_name": "drp_drdy_o" } ],
+            "DWE": [ { "physical_name": "drp_dwe_i" } ]
+          }
+        }
+      }
+    }
+  }
+}
